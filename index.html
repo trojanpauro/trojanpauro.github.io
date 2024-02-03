@@ -1,278 +1,146 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Paul Kofa Software Develovoper</title>
-    <meta name="description" content="Angry Bird Red  drawn by Pure CSS">
-    <meta name="author" content="Paul Kofa">
-    <meta property="og:title" content="red pure css">
-    <meta property="og:description" content="A Pro.">
-    <style type="text/css">
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
 
-.red_container {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgb(95, 177, 255);
-  overflow:hidden;
-}
-.red {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.face {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  border-radius: 50%;
-  transform: rotate(-45deg);
-  top: -160px;
-  left: -100px;
-  background-color : #d71313;
-}
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-.eye-brow {
-   padding:20px 45px;
-   border:none;
-   width: 6px;
-   height: 0.1px;
-   background-color:#d71313;
-   outline:none;
-   position:absolute;
-   z-index:50;
-   margin:15px;
-
-}
-.eye-brow:before,
-.eye-brow:after {
-   content:"";
-   position:absolute;
-   z-index:-1;
-   top:0;
-   left:0;
-   right:0;
-   bottom:0;
-   clip-path: polygon(0 40%, 100% 70%, 100% 100%, 0 100%);
-  background-color : #1d1515;
-}
-.eye-brow:before {
-  background:#000000;
-  transform:scale(1.05,1.12);
-}
-.right-brow{
- top: -65px;
-   left:68px;
-  transform: rotateY(180deg);
-
+  <!-- The Grid -->
+  <div class="w3-row-padding">
   
-  }
-.left-brow{
- top: -75px;
- left: -25px;
- transform: rotate(10deg);
-   }
-
-.eye-brow-trimmer{
-    position:absolute;
-    left: -100px;
-    width:500px; height:400px;
-    margin:0 auto;
-    overflow:hidden;
-    top: -160px;
-    z-index:600;
-}
-.eye-brow-trimmer:after{
-    content:'';
-    position:absolute;
-    border-radius:100%;
-    width:280px; height:280px;
-    box-shadow: 0px 0px 0px 2000px #5fb1ff;
-
-}
-.eye{
- width: 50px;
-  height: 50px;
-    background: white;
-  border-radius: 50%;
-  position: absolute;
-   box-shadow: 1px 1px 1px #888787;
-
-}
-.eye-one {
-  top: -24px;
-  left: 32px;
-}
-
-.eye-two{
-  top: -24px;
-  left: 80px;
- }
-.pupil{
-  width: 20px;
-    height: 25px;
-    background: black;
-    border-radius: 50%;
-    position: absolute;
-    box-shadow: 1px 1px 3px #888787;}
-.pupil-one {
-  top: -12px;
-    left: 47px;
- }
-.pupil-two {
-  top: -12px;
-    left: 90px;
-}
-.triangles{
-  height: 0;
-  width: 0;
-  border-left: 100px solid red;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  border-top: 100px solid transparent;
-  position: absolute;
-  top: -70px;
-    left: 100px;
-}
-.triangle-one{
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 54px 60px 48px;
-border-color: transparent transparent #f2b531 transparent;
-z-index:500;
- position: absolute;
-  top: 17px;
-    left: 30px;
-    border-bottom-right-radius:50%; 
-    border-bottom-left-radius:0;
-    transform: rotate(-120deg);
-  
-}
-
-.triangle-two{
-
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 43px 30px 30px;
-border-color: transparent transparent #f2b531 transparent;
-z-index:450;
- position: absolute;
-  top: 65px;
-    left: 55px;
-    transform: rotate(180deg);
-}
-
-
-
-.scaled {
-  -moz-transform: scale(1.1) rotate(180deg); /* Equal to scaleX(0.7) scaleY(0.7) */
-  background-color: transparent;
-  border-color: transparent transparent black transparent;
-  top: 65px;
-    left: 55px;
-    z-index:400;
-}
-
-
-.scaled2 {
-  -moz-transform: scale(1.1) rotate(-120deg); /* Equal to scaleX(0.7) scaleY(0.7) */
-  background-color: transparent;
-  border-color: transparent transparent black transparent;
-  z-index:499;
-    top: 17px;
-    left: 30px;
-}
-
-
-.bottom-mark{
-
-    width: 150px;
-  height: 150px;
-  position: absolute;
-  border-radius: 0% 100% 0% 100% / 0% 99% 1% 100% ;
-  transform: rotate(-45deg) scale(1);
-  top: 21px;
-  left: -25px;
-  background-color :#f2bebe;
-   
-    z-index:339;
-}
-
-.ear-one{
-
-    width: 300px;
-  height: 150px;
-  position: absolute;
-  border-radius: 24% 76% 19% 81% / 0% 82% 18% 100%  ;
-  transform:scale(0.2) rotate(-160deg);
-  top: -245px;
-  left: -140px;
-  background-color :#d71313;
-    z-index:700;
-  
-}
-
-.ear-two{
-      width: 300px;
-  height: 100px;
-  position: absolute;
-border-radius:11% 89% 4% 96% / 0% 82% 18% 100% ;
-transform:scale(0.2) rotate(-160deg);
-  top: -200px;
-  left: -170px;
-  background-color :#d71313;
-    z-index:700;
-}
-    </style>
-
-  </head>
-
-  <body>
-
-
-
-
-    <div>
-
-<div>Left Div </div>
-
-      <div> Right Div </div>
-
-      
-    </div>
-
-
+    <!-- Left Column -->
+    <div class="w3-third">
     
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Jane Doe</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Adobe Photoshop</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>Photography</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Illustrator</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Media</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Spanish</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+          </div>
+          <p>German</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+          <p>Web Development! All I need to know in one place</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>London Business School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Master Degree</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>School of Coding</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+          <p>Bachelor Degree</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
   
+  <!-- End Page Container -->
+</div>
 
-    <div class="red_container">
-  <div class="red">
-      <div class="face"></div>
-      <div class="eye-brow left-brow"></div>
-      <div class="eye-brow right-brow"></div>
-      <div class="eye-brow-trimmer"></div>
-      <div class="eye eye-one"></div>
-      <div class="eye eye-two"></div>
-      <div class="pupil pupil-one"></div>
-      <div class="pupil pupil-two"></div>
-      <div class="triangle-one"></div>
-      <div class="triangle-two"></div>
-      <div class="triangle-two scaled"></div>
-      <div class="triangle-one scaled2"></div>
-      <div class="bottom-mark"></div>
-      <div class="ear-one"></div>
-      <div class="ear-two"></div>
-      <div class=" head head-outline"></div>
-      <div class=" ear-one ear-one-outline"></div>
-      <div class="ear-two ear-two-outline"></div>
-    </div>
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
 
-      
-    </div>
-  </body>
+</body>
 </html>
